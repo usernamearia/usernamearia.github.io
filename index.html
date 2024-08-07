@@ -6,56 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <h1>Aria Safaie</h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="nav-left">
+                    <a href="https://www.linkedin.com/in/ariasafaie/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="nav-center">
+                    <a href="mailto:ariasafaie@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </li>
+                <li class="nav-right">
+                    <a href="https://github.com/usernamearia" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Welcome! I'm [Your Name], a [Your Profession/Title].</p>
+        <p>Welcome! I'm Aria Safaie, a recent Computer Science graduate from the University of Georgia and an aspiring
+            web developer looking to expand my knowledge within the field to become a better developer!</p>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
+            <h3>Online Bookstore</h3>
+            <p>→ Developed RESTful APIs using Java and Spring Boot, improving the modularity and scalability of the
+            application </p>
+           <p>→ Utilized Postman for API testing, ensuring robustness and reliability of the backend services</p>
+           <p>→ Configured and managed databases using XAMPP, ensuring data integrity and security</p>
+           <p>→ Built a dynamic and responsive user interface using ReactJS and CSS, containing 10+ components</p>
+           <p>→ Implemented higher-order tactics and reuse techniques to optimize component logic and improve
+        maintainability</p>
+        <p>→ Enhanced user experience by implementing features like search, sort, and filter options for the book listings</p>
+        <p>→ Implemented CRUD operations for managing books, authors, and user information, ensuring complete lifecycle
+        management</p>
+            <p>Technology:
+                <i class="fab fa-react tech-icon" title="ReactJS"></i>
+                <i class="fas fa-leaf tech-icon" title="Java Spring Boot"></i>
+            </p>
         </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
-        </div>
-        <!-- Add more projects as needed -->
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send</button>
-        </form>
+    <section id="why-tech">
+        <h2>Why Tech and Web Development?</h2>
+        <p> I have always had a passion when it came to computers as a kid and getting into the field of Computer Scicence was a no brainer. Web development draws me in because the ability to see your work update in real time and make adjustments gives me the edge to keep improving my craft and being a better developer.</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        <p>&copy; 2024 Aria Safaie. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
