@@ -97,30 +97,6 @@ nav h1 {
   background-color: #2563eb;
 }
 
-/* About Section styling */
-.about-section {
-  background-color: black;
-  padding: 4rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-}
-
-.about-section h3 {
-  font-size: 1.75rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #3b82f6;
-}
-
-.about-section p {
-  color: #9ca3af;
-  font-size: 1.125rem;
-  max-width: 600px; /* Limits paragraph width for readability */
-}
-
 /* Projects Section styling */
 .projects-section {
   background-color: black;
@@ -189,9 +165,5 @@ footer {
   
   .view-projects-btn {
     font-size: 1.25rem; /* Larger button text on desktop */
-  }
-  
-  .about-section p {
-    font-size: 1.25rem;
   }
 }
