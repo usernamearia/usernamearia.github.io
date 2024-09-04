@@ -18,37 +18,38 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 50px; /* Add padding to push the name down */
+  padding-top: 50px;
   background-color: black;
   text-align: center;
 }
 
 nav h1 {
   margin: 0;
-  font-size: 3rem;
+  font-size: 2.5rem; /* Adjusted for responsiveness */
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #3b82f6; /* Tailwind blue */
+  color: #3b82f6;
 }
 
 /* Social Icons Styling */
 .social-icons {
   margin-top: 25px;
   display: flex;
-  justify-content: space-between;
-  width: 500px;
+  justify-content: space-around; /* Centered and spaced icons */
+  width: 100%; /* Full width for small screens */
+  max-width: 400px; /* Limits icon width on larger screens */
 }
 
 .icon {
-  font-size: 3rem; /* Increased icon size */
+  font-size: 2rem; /* Responsive font size */
   transition: color 0.3s ease, transform 0.3s ease;
   color: white;
 }
 
 .icon:hover {
-  color: #3b82f6; /* Turn blue on hover */
-  transform: scale(2); /* Slightly scale up on hover */
+  color: #3b82f6;
+  transform: scale(1.2); /* Slightly scale up on hover */
 }
 
 /* Hero Section styling */
@@ -61,10 +62,11 @@ nav h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 2rem; /* Add padding for better spacing on small screens */
 }
 
 .hero h2 {
-  font-size: 2.5rem;
+  font-size: 2rem; /* Smaller font size for mobile */
   font-weight: bold;
   margin-bottom: 1rem;
   transition: color 0.3s ease;
@@ -88,7 +90,7 @@ nav h1 {
   color: white;
   text-decoration: none;
   border: 3px solid white;
-  font-size: large;
+  font-size: 1rem; /* Responsive button text */
 }
 
 .view-projects-btn:hover {
@@ -98,15 +100,16 @@ nav h1 {
 /* About Section styling */
 .about-section {
   background-color: black;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
 }
 
 .about-section h3 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: #3b82f6;
@@ -115,17 +118,18 @@ nav h1 {
 .about-section p {
   color: #9ca3af;
   font-size: 1.125rem;
+  max-width: 600px; /* Limits paragraph width for readability */
 }
 
 /* Projects Section styling */
 .projects-section {
   background-color: black;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
   text-align: center;
 }
 
 .projects-section h3 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: bold;
   margin-bottom: 2rem;
   color: white;
@@ -139,18 +143,15 @@ nav h1 {
 
 .project-item:hover {
   border-color: white;
-  box-shadow: 0 0 15px 5px white; /* White glow effect on hover */
+  box-shadow: 0 0 15px 5px white;
 }
 
+/* Grid for Projects */
 @media (min-width: 640px) {
   .grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 1024px) {
-  .grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns on medium and large screens */
+    gap: 2rem;
   }
 }
 
@@ -158,6 +159,39 @@ nav h1 {
 footer {
   background-color: black;
   color: #9ca3af;
-  padding: 1rem 0;
+  padding: 1rem;
   text-align: center;
+}
+
+/* Media Queries for Responsive Layout */
+
+/* Adjusting hero section for tablets and larger */
+@media (min-width: 768px) {
+  .hero h2 {
+    font-size: 2.5rem; /* Larger font size on tablets */
+  }
+  .hero p {
+    font-size: 1.25rem; /* Adjusted for readability */
+  }
+}
+
+@media (min-width: 1024px) {
+  nav h1 {
+    font-size: 3.5rem; /* Increase name size for desktop */
+  }
+  .social-icons .icon {
+    font-size: 3rem; /* Larger icons for desktop */
+  }
+
+  .hero h2 {
+    font-size: 3.5rem;
+  }
+  
+  .view-projects-btn {
+    font-size: 1.25rem; /* Larger button text on desktop */
+  }
+  
+  .about-section p {
+    font-size: 1.25rem;
+  }
 }
