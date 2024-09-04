@@ -87,7 +87,8 @@ nav h1 {
   transition: background-color 0.3s ease;
   color: white;
   text-decoration: none;
-  border: 2px solid white;
+  border: 3px solid white;
+  font-size: large;
 }
 
 .view-projects-btn:hover {
@@ -151,40 +152,6 @@ nav h1 {
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
-}
-
-/* Contact Section styling */
-.contact-section {
-  background-color: #3b82f6;
-  color: white;
-  padding: 4rem 0;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact-section h3 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.contact-section p {
-  font-size: 1.125rem;
-  margin-bottom: 2rem;
-}
-
-.contact-btn {
-  background-color: white;
-  color: #3b82f6;
-  padding: 0.75rem 1.5rem;
-  border-radius: 9999px;
-  transition: background-color 0.3s ease;
-}
-
-.contact-btn:hover {
-  background-color: #2563eb;
 }
 
 /* Footer styling */
