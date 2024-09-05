@@ -30,6 +30,11 @@ nav h1 {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #3b82f6;
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+nav h1:hover {
+  color: white; /* Turn white on hover */
 }
 
 /* Social Icons Styling */
@@ -56,7 +61,7 @@ nav h1 {
 .hero {
   background-color: black;
   color: white;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,7 +99,9 @@ nav h1 {
 }
 
 .view-projects-btn:hover {
-  background-color: #2563eb;
+  background-color: white;
+  color: #3b82f6;
+  border: 3px solid #3b82f6;
 }
 
 /* Projects Section styling */
@@ -109,6 +116,11 @@ nav h1 {
   font-weight: bold;
   margin-bottom: 2rem;
   color: white;
+  transition: color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.projects-section h3:hover {
+  color: #3b82f6; /* Change color to blue on hover */
 }
 
 .project-item {
