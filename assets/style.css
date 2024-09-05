@@ -25,36 +25,36 @@ nav {
 
 nav h1 {
   margin: 0;
-  font-size: 2.5rem; /* Adjusted for responsiveness */
+  font-size: 2.5rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #3b82f6;
-  transition: color 0.3s ease; /* Add transition for smooth color change */
+  transition: color 0.3s ease;
 }
 
 nav h1:hover {
-  color: white; /* Turn white on hover */
+  color: white;
 }
 
 /* Social Icons Styling */
 .social-icons {
   margin-top: 25px;
   display: flex;
-  justify-content: space-around; /* Centered and spaced icons */
-  width: 100%; /* Full width for small screens */
-  max-width: 400px; /* Limits icon width on larger screens */
+  justify-content: space-around;
+  width: 100%;
+  max-width: 400px;
 }
 
 .icon {
-  font-size: 2rem; /* Responsive font size */
+  font-size: 2rem;
   transition: color 0.3s ease, transform 0.3s ease;
   color: white;
 }
 
 .icon:hover {
   color: #3b82f6;
-  transform: scale(1.2); /* Slightly scale up on hover */
+  transform: scale(1.2);
 }
 
 /* Hero Section styling */
@@ -67,11 +67,11 @@ nav h1:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2rem; /* Add padding for better spacing on small screens */
+  padding: 2rem;
 }
 
 .hero h2 {
-  font-size: 2rem; /* Smaller font size for mobile */
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
   transition: color 0.3s ease;
@@ -95,7 +95,7 @@ nav h1:hover {
   color: white;
   text-decoration: none;
   border: 3px solid white;
-  font-size: 1rem; /* Responsive button text */
+  font-size: 1rem;
 }
 
 .view-projects-btn:hover {
@@ -116,29 +116,69 @@ nav h1:hover {
   font-weight: bold;
   margin-bottom: 2rem;
   color: white;
-  transition: color 0.3s ease; /* Add transition for smooth hover effect */
+  transition: color 0.3s ease;
 }
 
 .projects-section h3:hover {
-  color: #3b82f6; /* Change color to blue on hover */
+  color: #3b82f6;
 }
 
+/* Project card flip styling */
 .project-item {
-  padding: 2rem;
-  border: 2px solid transparent;
-  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  perspective: 1000px;
+  height: 250px;
+  position: relative;
+}
+
+.project-content, .project-info {
+  backface-visibility: hidden;
+  height: 100%;
+}
+
+.project-content {
+  background-color: #3b82f6;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  transition: transform .3s ease;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-info {
+  background-color: #1f2937;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  color: #9ca3af;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+  transition: transform 0.7s ease;
+}
+
+.group:hover .project-content {
+  transform: rotateY(180deg);
+}
+
+.group:hover .project-info {
+  transform: rotateY(0deg);
 }
 
 .project-item:hover {
-  border-color: white;
-  box-shadow: 0 0 15px 5px white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 /* Grid for Projects */
 @media (min-width: 640px) {
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 columns on medium and large screens */
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
 }
@@ -152,30 +192,26 @@ footer {
 }
 
 /* Media Queries for Responsive Layout */
-
-/* Adjusting hero section for tablets and larger */
 @media (min-width: 768px) {
   .hero h2 {
-    font-size: 2.5rem; /* Larger font size on tablets */
+    font-size: 2.5rem;
   }
   .hero p {
-    font-size: 1.25rem; /* Adjusted for readability */
+    font-size: 1.25rem;
   }
 }
 
 @media (min-width: 1024px) {
   nav h1 {
-    font-size: 3.5rem; /* Increase name size for desktop */
+    font-size: 3.5rem;
   }
   .social-icons .icon {
-    font-size: 3rem; /* Larger icons for desktop */
+    font-size: 3rem;
   }
-
   .hero h2 {
     font-size: 3.5rem;
   }
-  
   .view-projects-btn {
-    font-size: 1.25rem; /* Larger button text on desktop */
+    font-size: 1.25rem;
   }
 }

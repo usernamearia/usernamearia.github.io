@@ -35,14 +35,25 @@
     <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-8">My Projects</h3>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
       <!-- Project 1 -->
-      <div class="project-item">
-        <h4 class="text-xl sm:text-2xl font-bold mb-2">Project 1</h4>
-        <p class="text-gray-400">Description of the project goes here.</p>
+      <div class="project-item relative group">
+        <div class="project-content bg-blue-500 p-6 rounded-lg shadow-lg transform group-hover:rotate-y-180 transition-transform duration-700">
+          <h4 class="text-xl sm:text-2xl font-bold mb-2 text-white">Personal Website</h4>
+          <p class="text-white">Developed a responsive portfolio website ensuring a seamless user experience across devices.</p>
+        </div>
+        <div class="project-info bg-gray-800 p-6 rounded-lg shadow-lg absolute inset-0 transform rotate-y-180 group-hover:rotate-y-0 transition-transform duration-700">
+          <p class="text-gray-400">Leveraged Tailwind CSS for a sleek design, deployed via GitHub Pages, optimized for performance with minified CSS and JS, lazy loading, and image compression.</p>
+        </div>
       </div>
+      
       <!-- Project 2 -->
-      <div class="project-item">
-        <h4 class="text-xl sm:text-2xl font-bold mb-2">Project 2</h4>
-        <p class="text-gray-400">Description of the second project goes here.</p>
+      <div class="project-item relative group">
+        <div class="project-content bg-blue-500 p-6 rounded-lg shadow-lg transform group-hover:rotate-y-180 transition-transform duration-700">
+          <h4 class="text-xl sm:text-2xl font-bold mb-2 text-white">Online Bookstore</h4>
+          <p class="text-white">Developed RESTful APIs and dynamic UI using React and Java Spring Boot for an online bookstore.</p>
+        </div>
+        <div class="project-info bg-gray-800 p-6 rounded-lg shadow-lg absolute inset-0 transform rotate-y-180 group-hover:rotate-y-0 transition-transform duration-700">
+          <p class="text-gray-400">Implemented search, sort, and filter features, CRUD operations, and user management, ensuring scalability and performance.</p>
+        </div>
       </div>
     </div>
   </section>
