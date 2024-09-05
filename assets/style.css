@@ -10,6 +10,7 @@ body {
   background-color: #808080;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden; /* Prevent any horizontal overflow */
 }
 
 /* Navigation styling */
@@ -109,6 +110,7 @@ nav h1:hover {
   background-color: black;
   padding: 4rem 1rem;
   text-align: center;
+  overflow: hidden; /* Prevent overflow from affecting the page */
 }
 
 .projects-section h3 {
@@ -128,6 +130,7 @@ nav h1:hover {
   perspective: 1000px;
   height: 250px;
   position: relative;
+  overflow: hidden;
 }
 
 .project-content, .project-info {
@@ -139,7 +142,7 @@ nav h1:hover {
   background-color: #3b82f6;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  transition: transform .3s ease;
+  transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for smooth animation and shadow */
   transform-style: preserve-3d;
   display: flex;
   flex-direction: column;
@@ -159,7 +162,7 @@ nav h1:hover {
   align-items: center;
   position: absolute;
   inset: 0;
-  transition: transform 0.7s ease;
+  transition: transform 0.5s ease-in-out;
 }
 
 .group:hover .project-content {
@@ -171,7 +174,7 @@ nav h1:hover {
 }
 
 .project-item:hover {
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 25px 5px white; /* Bright white outline effect on hover */
 }
 
 /* Grid for Projects */
