@@ -9,7 +9,7 @@
     <!-- Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- JavaScript File -->
-    <script src="scripts.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <!-- Dark Theme Body -->
@@ -60,7 +60,7 @@
             <h2 class="text-3xl font-semibold text-white mb-8">Experience & Projects</h2>
 
             <!-- Project 1: Personal Website Development -->
-            <article class="mb-8 p-4 border border-transparent hover:border-yellow-500 transition-all duration-300 rounded-lg">
+            <article id="personal-website-project" class="mb-8 p-4 border border-transparent hover:border-yellow-500 transition-all duration-300 rounded-lg cursor-pointer">
                 <h3 class="text-xl font-bold text-white">Personal Website Development | Portfolio Project</h3>
                 <p class="italic mb-4 text-gray-400">
                     Designed, developed, and deployed a personal portfolio website to showcase projects, skills, and professional experience
@@ -76,21 +76,23 @@
             </article>
 
             <!-- Project 2: Full-Stack Development - Online Bookstore -->
-            <article class="p-4 border border-transparent hover:border-yellow-500 transition-all duration-300 rounded-lg">
-                <h3 class="text-xl font-bold text-white">Full-Stack Development | Online Bookstore (Coursework)</h3>
-                <p class="italic mb-4 text-gray-400">
-                    Collaborated with others on a semester-long online bookstore application involving multiple sprint cycles
-                </p>
-                <ul class="list-disc list-inside text-gray-400">
-                    <li>Developed RESTful APIs using Java and Spring Boot, improving the modularity and scalability of the application</li>
-                    <li>Utilized Postman for API testing, ensuring robustness and reliability of the backend services</li>
-                    <li>Configured and managed databases using XAMPP, ensuring data integrity and security</li>
-                    <li>Built a dynamic and responsive user interface using ReactJS and CSS, containing 10+ components</li>
-                    <li>Enhanced user experience by implementing features like search, sort, and filter options for the book listings</li>
-                    <li>Implemented CRUD operations for managing books, authors, and user information, ensuring complete lifecycle management</li>
-                </ul>
-                <p class="mt-2 text-gray-300">Spring Boot | Postman | ReactJS | CSS | HTML | Java</p>
-            </article>
+            <a href="https://github.com/usernamearia/SWE" target="_blank">
+                <article id="bookstore-project" class="p-4 border border-transparent hover:border-yellow-500 transition-all duration-300 rounded-lg cursor-pointer">
+                    <h3 class="text-xl font-bold text-white">Full-Stack Development | Online Bookstore (Coursework)</h3>
+                    <p class="italic mb-4 text-gray-400">
+                        Collaborated with others on a semester-long online bookstore application involving multiple sprint cycles
+                    </p>
+                    <ul class="list-disc list-inside text-gray-400">
+                        <li>Developed RESTful APIs using Java and Spring Boot, improving the modularity and scalability of the application</li>
+                        <li>Utilized Postman for API testing, ensuring robustness and reliability of the backend services</li>
+                        <li>Configured and managed databases using XAMPP, ensuring data integrity and security</li>
+                        <li>Built a dynamic and responsive user interface using ReactJS and CSS, containing 10+ components</li>
+                        <li>Enhanced user experience by implementing features like search, sort, and filter options for the book listings</li>
+                        <li>Implemented CRUD operations for managing books, authors, and user information, ensuring complete lifecycle management</li>
+                    </ul>
+                    <p class="mt-2 text-gray-300">Spring Boot | Postman | ReactJS | CSS | HTML | Java</p>
+                </article>
+            </a>
         </section>
     </main>
 
