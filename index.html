@@ -1,69 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My Portfolio</title>
-  <!-- Updated Font Awesome for social media icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link href="./assets/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aria Safaie's Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- JavaScript File -->
+    <script src="scripts.js" defer></script>
 </head>
-<body>
 
-  <!-- Navigation (Name at the top) -->
-  <nav class="p-4">
-    <h1 class="text-center text-4xl md:text-6xl font-extrabold text-blue-500">Aria Safaie</h1>
-    <!-- Social Media Icons -->
-    <div class="social-icons mt-4 flex justify-center space-x-8 md:space-x-16">
-      <a href="https://github.com/usernamearia" target="_blank" class="icon github"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/ariasafaie" target="_blank" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
-      <!-- Email icon -->
-      <a href="mailto:ariasafaie@gmail.com" target="_blank" class="icon email"><i class="fas fa-envelope"></i></a>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero flex flex-col justify-center items-center text-center min-h-screen bg-black text-white p-4">
-    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Welcome to My Portfolio</h2>
-    <p class="text-lg sm:text-xl mb-6">A showcase of my work, skills, and experience.</p>
-    <a href="#projects" class="view-projects-btn">View Projects</a>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects-section bg-black p-8 md:p-16 text-center">
-    <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-8">My Projects</h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-      <!-- Project 1 -->
-      <div class="project-item relative group">
-        <div class="project-content bg-blue-500 p-6 rounded-lg shadow-lg transform group-hover:rotate-y-180 transition-transform duration-700">
-          <h4 class="text-xl sm:text-2xl font-bold mb-2 text-white">Personal Website</h4>
-          <p class="text-white">Developed a responsive portfolio website ensuring a seamless user experience across devices.</p>
+<!-- Dark Theme Body -->
+<body class="bg-gray-900 text-gray-200">
+    <!-- Header Section -->
+    <header class="flex justify-between items-center p-6 bg-gray-800 shadow-md">
+        <!-- Profile Picture and Name -->
+        <div class="flex items-center">
+            <img id="profile-pic" src="https://via.placeholder.com/64" alt="Aria Safaie" class="rounded-full w-16 h-16 border-2 border-gray-500">
+            <h1 class="ml-4 text-2xl font-semibold text-white">Aria Safaie</h1>
         </div>
-        <div class="project-info bg-gray-800 p-6 rounded-lg shadow-lg absolute inset-0 transform rotate-y-180 group-hover:rotate-y-0 transition-transform duration-700">
-          <p class="text-gray-400">Leveraged Tailwind CSS for a sleek design, deployed via GitHub Pages, optimized for performance with minified CSS and JS, lazy loading, and image compression.</p>
-        </div>
-      </div>
-      
-      <!-- Project 2 -->
-      <div class="project-item relative group">
-        <div class="project-content bg-blue-500 p-6 rounded-lg shadow-lg transform group-hover:rotate-y-180 transition-transform duration-700">
-          <h4 class="text-xl sm:text-2xl font-bold mb-2 text-white">Online Bookstore</h4>
-          <p class="text-white">Developed RESTful APIs and dynamic UI using React and Java Spring Boot for an online bookstore.</p>
-        </div>
-        <div class="project-info bg-gray-800 p-6 rounded-lg shadow-lg absolute inset-0 transform rotate-y-180 group-hover:rotate-y-0 transition-transform duration-700">
-          <p class="text-gray-400">Implemented search, sort, and filter features, CRUD operations, and user management, ensuring scalability and performance.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Footer -->
-  <footer class="bg-black text-gray-400 py-4 text-center">
-    <p>&copy; 2024 Aria Safaie. All rights reserved.</p>
-  </footer>
+    <!-- Main Section -->
+    <main class="max-w-4xl mx-auto py-12 px-4">
+        <!-- Social Media Links -->
+        <section class="text-center mb-12">
+            <h2 class="text-3xl font-semibold text-white mb-8">Connect with Me</h2>
+            <div class="flex justify-center space-x-6">
+                <a href="https://github.com/usernamearia" target="_blank" class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg" alt="GitHub" class="w-8 h-8">
+                    <span class="mt-2 text-gray-400 hover:text-white">GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/ariasafaie/" target="_blank" class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" alt="LinkedIn" class="w-8 h-8">
+                    <span class="mt-2 text-gray-400 hover:text-white">LinkedIn</span>
+                </a>
+                <a href="mailto:ariasafaie@gmail.com" class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/gmail.svg" alt="Email" class="w-8 h-8">
+                    <span class="mt-2 text-gray-400 hover:text-white">Email</span>
+                </a>
+            </div>
+        </section>
 
-  <!-- Link to external JS file -->
-  <script src="./js/script.js"></script>
+        <!-- About Me Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-semibold text-white mb-8">About Me</h2>
+            <p class="text-gray-400 leading-relaxed">
+                I am Aria Safaie, a passionate developer focused on creating highly functional, responsive, and accessible web applications. 
+                With experience in front-end and back-end technologies, I specialize in using modern frameworks and libraries like Tailwind CSS, 
+                JavaScript, ReactJS, and Spring Boot to build scalable and user-friendly applications. My goal is to create seamless experiences 
+                that engage users, while continuously improving my skill set and contributing to meaningful projects.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-semibold text-white mb-8">Experience & Projects</h2>
+
+            <!-- Project 1: Personal Website Development -->
+            <article class="mb-8 p-4 border border-transparent hover:border-yellow-500 transition-all duration-300 rounded-lg">
+                <h3 class="text-xl font-bold text-white">Personal Website Development | Portfolio Project</h3>
+                <p class="italic mb-4 text-gray-400">
+                    Designed, developed, and deployed a personal portfolio website to showcase projects, skills, and professional experience
+                </p>
+                <ul class="list-disc list-inside text-gray-400">
+                    <li>Developed a responsive portfolio website ensuring a seamless user experience across desktops, tablets, and mobile devices</li>
+                    <li>Deployed the website using GitHub Pages, ensuring continuous integration and deployment (CI/CD) through version control with Git, facilitating easy updates and maintenance</li>
+                    <li>Leveraged Tailwind CSS to implement a highly customizable and consistent design system, resulting in a sleek, modern, and accessible user interface</li>
+                    <li>Optimized website performance through best practices like minifying CSS and JavaScript files, image compression, and lazy loading, achieving a significant reduction in load times</li>
+                    <li>Utilized Git for source control management, following best practices for branching, committing, and merging</li>
+                </ul>
+                <p class="mt-2 text-gray-300">HTML | Tailwind CSS | JavaScript | Git</p>
+            </article>
+
+            <!-- Project 2: Full-Stack Development - Online Bookstore -->
+            <article class="p-4 border border-transparent hover:border-yellow-500 transition-all duration-300 rounded-lg">
+                <h3 class="text-xl font-bold text-white">Full-Stack Development | Online Bookstore (Coursework)</h3>
+                <p class="italic mb-4 text-gray-400">
+                    Collaborated with others on a semester-long online bookstore application involving multiple sprint cycles
+                </p>
+                <ul class="list-disc list-inside text-gray-400">
+                    <li>Developed RESTful APIs using Java and Spring Boot, improving the modularity and scalability of the application</li>
+                    <li>Utilized Postman for API testing, ensuring robustness and reliability of the backend services</li>
+                    <li>Configured and managed databases using XAMPP, ensuring data integrity and security</li>
+                    <li>Built a dynamic and responsive user interface using ReactJS and CSS, containing 10+ components</li>
+                    <li>Enhanced user experience by implementing features like search, sort, and filter options for the book listings</li>
+                    <li>Implemented CRUD operations for managing books, authors, and user information, ensuring complete lifecycle management</li>
+                </ul>
+                <p class="mt-2 text-gray-300">Spring Boot | Postman | ReactJS | CSS | HTML | Java</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center mt-16 text-sm text-gray-500">
+        © 2024 Aria Safaie. All rights reserved.
+    </footer>
 </body>
+
 </html>
