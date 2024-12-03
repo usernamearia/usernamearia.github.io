@@ -85,7 +85,9 @@ body {
     font-size: 14px;
     line-height: 1.5;
     color: #cfcfcf;
+    font-weight: bold;
 }
+
 
 .input-line {
     display: flex;
@@ -94,6 +96,7 @@ body {
 
 .prompt {
     margin-right: 10px;
+    font-weight: bold;
 }
 
 input {
@@ -106,7 +109,9 @@ input {
     line-height: 1.5;
     padding: 5px;
     font-family: inherit;
+    font-weight: bold;
 }
+
 
 body.light-mode {
     background-color: #f9f9f9;
