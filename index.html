@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Terminal</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="terminal">
+        <div class="toolbar">
+            <div id="title" class="title">Aria Safaie</div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ariasafaie/" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/usernamearia" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+                <a href="mailto:ariasafaie@gmail.com" target="_blank" class="icon email-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+            <button id="light-toggle" class="toggle-btn">
+                <i class="fas fa-moon"></i>
+                <span>Dark Mode</span>
+            </button>
+        </div>
+        <div id="terminal-output"></div>
+        <div class="input-line">
+            <span id="prompt" class="prompt">root@portfolio:~$</span>
+            <input type="text" id="terminal-input" autofocus autocomplete="off">
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

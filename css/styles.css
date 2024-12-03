@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1a1a1a;
+    color: #cfcfcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.terminal {
+    width: 90%;
+    max-width: 1000px;
+    height: 550px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #cfcfcf;
+    transition: color 0.3s ease;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    color: #cfcfcf;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #00aaff;
+}
+
+.toggle-btn {
+    background-color: #444;
+    color: #cfcfcf;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle-btn i {
+    font-size: 18px;
+}
+
+.toggle-btn:hover {
+    background-color: #666;
+}
+
+#terminal-output {
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #cfcfcf;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    margin-right: 10px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    color: inherit;
+    outline: none;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 5px;
+    font-family: inherit;
+}
+
+body.light-mode {
+    background-color: #f9f9f9;
+    color: #333333;
+}
+
+body.light-mode .terminal {
+    background-color: #ffffff;
+    color: #333333;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+body.light-mode .toggle-btn {
+    background-color: #e0e0e0;
+    color: #333333;
+}
+
+body.light-mode .toggle-btn:hover {
+    background-color: #cccccc;
+}
+
+body.light-mode .toggle-btn i {
+    color: #333333;
+}
+
+body.light-mode .title {
+    color: #333333;
+}
+
+body.light-mode .icon {
+    color: #333333;
+}
+
+body.light-mode .icon:hover {
+    color: #0077cc;
+}
+
+body.light-mode .terminal {
+    background-color: #f0f0f0;
+    color: #333333;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode #terminal-output {
+    background-color: #e8e8e8;
+    color: #333333;
+}
+
+body.light-mode input {
+    color: #333333;
+}
