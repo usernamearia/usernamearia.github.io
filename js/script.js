@@ -46,7 +46,6 @@ function handleCommand(command) {
         case 'clear': clearTerminal(); break; // Clear terminal output
         case 'manpages': showManpages(); break; // List available commands
         case 'open': openFile(target); break; // Open a file
-        case 'exit': exitTerminal(); break; // Close the page
         default:
             appendOutput(`Command not found: ${cmd}`);
             appendOutput('Type "manpages" to see a list of valid commands.');
@@ -107,17 +106,8 @@ function showManpages() {
         'open [file] - Open and read a .txt file content in the terminal',
         'clear    - Clear terminal',
         'manpages - Show manual pages',
-        'exit     - Close the webpage'
     ];
     manpages.forEach(line => appendOutput(line));
-}
-
-// Simulates exiting the terminal
-function exitTerminal() {
-    appendOutput('Closing terminal...');
-    setTimeout(() => {
-        window.close();
-    }, 500);
 }
 
 // Opens and displays the contents of a file
