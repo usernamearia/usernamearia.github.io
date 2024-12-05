@@ -148,12 +148,6 @@ body.light-mode .icon:hover {
     color: #0077cc;
 }
 
-body.light-mode .terminal {
-    background-color: #f0f0f0;
-    color: #333333;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
 body.light-mode #terminal-output {
     background-color: #e8e8e8;
     color: #333333;
