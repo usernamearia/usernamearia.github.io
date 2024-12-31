@@ -55,6 +55,16 @@ header {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+body.dark-mode .name:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+body.light-mode .name:hover {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
 .contacts {
@@ -90,38 +100,6 @@ header {
 .company-link:hover {
     text-decoration: underline;
     color: #0056b3;
-}
-
-.dark-mode-btn {
-    background-color: #444;
-    color: #fff;
-    border: 2px solid #555;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    cursor: pointer;
-    overflow: visible;
-    transition: background-color 0.3s ease, transform 0.3s ease, border 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    margin-top: 0.5rem;
-}
-
-body.light-mode .dark-mode-btn {
-    background-color: #e0e0e0;
-    color: #121212;
-    border: 2px solid #c0c0c0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.dark-mode-btn:hover {
-    transform: scale(1.1);
-    background-color: #555;
-    border-color: #666;
-}
-
-body.light-mode .dark-mode-btn:hover {
-    background-color: #d0d0d0;
-    border-color: #b0b0b0;
 }
 
 main {
@@ -186,11 +164,6 @@ body.light-mode .card {
         font-size: 1rem;
     }
 
-    .dark-mode-btn {
-        padding: 0.4rem 0.6rem;
-        font-size: 0.8rem;
-    }
-
     section {
         margin: 1rem 0;
     }
@@ -203,10 +176,6 @@ body.light-mode .card {
 
     .contacts .icon {
         font-size: 0.9rem;
-    }
-
-    .dark-mode-btn {
-        padding: 0.3rem 0.5rem;
     }
 
     section {
