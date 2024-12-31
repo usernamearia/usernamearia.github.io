@@ -12,9 +12,11 @@ html, body {
 
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column; 
+    justify-content: flex-start; 
     align-items: center;
     min-height: 100vh;
+    padding: 2rem 0; 
     background-color: #121212;
     color: #ffffff;
     font-size: 14px;
@@ -33,21 +35,22 @@ header {
     text-align: center;
     width: 100%;
     padding-top: 2rem;
+    margin-bottom: 1rem; 
 }
 
 .name {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
-    word-wrap: break-word;
+    word-wrap: break-word; 
 }
 
 .contacts {
     display: flex;
     justify-content: center;
     gap: 0.8rem;
-    flex-wrap: wrap; /* Ensure icons wrap if they don't fit */
-    margin-bottom: 0.5rem;
+    flex-wrap: wrap; 
+    margin-bottom: 1rem;
 }
 
 .icon {
@@ -84,6 +87,7 @@ main {
     align-items: center;
     width: 100%;
     text-align: center;
+    padding: 1rem;
 }
 
 section {
@@ -112,17 +116,24 @@ section:hover {
     transform: translateY(-10px);
 }
 
+.summary {
+    margin-top: 2rem; 
+    padding: 1rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
 @media (max-width: 768px) {
-    .contacts {
-        flex-direction: row;
+    body {
+        padding: 1rem 0; 
     }
 
     .name {
         font-size: 2rem;
     }
 
-    .contacts .icon {
-        font-size: 1rem;
+    .contacts {
+        gap: 0.6rem; 
     }
 
     section {
@@ -131,8 +142,13 @@ section:hover {
 }
 
 @media (max-width: 480px) {
+    body {
+        padding: 0.8rem 0; 
+    }
+
     .name {
         font-size: 1.8rem;
+        margin-bottom: 0.3rem;
     }
 
     .contacts {
