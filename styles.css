@@ -15,18 +15,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    font-size: 14px;
-}
-
-body.dark-mode {
     background-color: #121212;
     color: #ffffff;
-}
-
-body.light-mode {
-    background-color: #f0f0f0;
-    color: #121212;
+    font-size: 14px;
 }
 
 .container {
@@ -43,28 +34,15 @@ header {
     width: 100%;
 }
 
-.top-bar {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    padding: 0.5rem;
-}
-
 .name {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
-    cursor: pointer;
     transition: text-shadow 0.3s ease-in-out;
 }
 
-body.dark-mode .name:hover {
+.name:hover {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
-}
-
-body.light-mode .name:hover {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
 .contacts {
@@ -120,12 +98,6 @@ section {
     width: 100%;
 }
 
-body.light-mode section {
-    background: #ffffff;
-    border: 1px solid #dcdcdc;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
 section:hover {
     transform: scale(1.02);
 }
@@ -138,11 +110,6 @@ section:hover {
     transition: transform 0.3s ease-in-out, background 0.3s ease;
 }
 
-body.light-mode .card {
-    background: #f9f9f9;
-    border: 1px solid #e6e6e6;
-}
-
 .card:hover {
     transform: translateY(-10px);
 }
@@ -150,10 +117,6 @@ body.light-mode .card {
 @media (max-width: 768px) {
     .contacts {
         flex-direction: row;
-    }
-
-    .top-bar {
-        padding-right: 1rem;
     }
 
     .name {
