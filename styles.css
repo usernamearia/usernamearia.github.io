@@ -24,7 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 100%;
     max-width: 900px;
     padding: 1rem;
 }
@@ -39,12 +39,14 @@ header {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+    word-wrap: break-word;
 }
 
 .contacts {
     display: flex;
     justify-content: center;
     gap: 0.8rem;
+    flex-wrap: wrap; /* Ensure icons wrap if they don't fit */
     margin-bottom: 0.5rem;
 }
 
@@ -86,7 +88,7 @@ main {
 
 section {
     margin: 1.5rem 0;
-    padding: 0.8rem;
+    padding: 1rem;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.05);
     transition: background 0.3s ease, transform 0.3s ease-in-out;
@@ -100,7 +102,7 @@ section:hover {
 
 .card {
     background: rgba(255, 255, 255, 0.1);
-    padding: 0.8rem;
+    padding: 1rem;
     border-radius: 10px;
     margin-top: 0.8rem;
     transition: transform 0.3s ease-in-out, background 0.3s ease;
@@ -133,11 +135,20 @@ section:hover {
         font-size: 1.8rem;
     }
 
+    .contacts {
+        gap: 0.5rem; 
+    }
+
     .contacts .icon {
         font-size: 0.9rem;
     }
 
     section {
         margin: 0.8rem 0;
+        padding: 0.8rem;
+    }
+
+    .card {
+        padding: 0.8rem;
     }
 }
