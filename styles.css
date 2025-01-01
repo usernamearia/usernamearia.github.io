@@ -48,13 +48,13 @@ header {
 .contacts {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 0.8rem;
-    flex-wrap: wrap; 
     margin-bottom: 1rem;
 }
 
 .icon {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: inherit;
     text-decoration: none;
     transition: transform 0.3s ease-in-out;
@@ -68,6 +68,15 @@ header {
 .mail-icon {
     cursor: pointer;
 }
+
+.contacts-gif {
+    margin: 1rem auto;
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
 
 .company-link {
     color: #2196F3;
