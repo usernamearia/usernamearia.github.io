@@ -200,3 +200,15 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+.project-link {
+    color: #2196F3;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
