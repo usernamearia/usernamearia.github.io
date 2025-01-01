@@ -28,7 +28,7 @@ To run this project locally:
 
 - **HTML5**: For structuring content.  
 - **CSS3**: For styling and layout.  
-- **JavaScript**: (Optional) For interactive elements.  
+- **JavaScript**: For interactive elements.  
 
 ## 📂 Project Structure
 
