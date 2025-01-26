@@ -176,6 +176,10 @@ section:hover {
     .card {
         padding: 0.8rem;
     }
+
+    .contacts .icon {
+        font-size: 2rem;
+    }
 }
 
 footer {
