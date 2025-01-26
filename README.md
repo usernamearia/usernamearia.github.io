@@ -2,6 +2,8 @@
 
 Welcome to the repository for my personal website, hosted on GitHub Pages! This project serves as both a portfolio and a hub for sharing my projects, skills, and interests.
 
+https://github.com/user-attachments/assets/eabf56d0-e94c-4c75-8260-94008a3babfb
+
 ## 🌟 Features
 
 - **Personal Portfolio**: Showcasing my work, projects, and achievements.  
