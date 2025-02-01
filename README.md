@@ -30,8 +30,8 @@ To run this project locally:
 
 ## 🛠️ Technologies Used
 
-- **HTML5**: For structuring content.  
-- **CSS3**: For styling and layout.  
+- **HTML**: For structuring content.  
+- **CSS**: For styling and layout.  
 - **JavaScript**: For interactive elements.  
 
 ## 📂 Project Structure
