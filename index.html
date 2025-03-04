@@ -3,26 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aria Safaie's portfolio showcasing IT support, cybersecurity, and web development projects.">
+    <meta property="og:title" content="Aria Safaie Portfolio">
+    <meta property="og:description" content="IT Support Specialist with a passion for cybersecurity and web development.">
+    <meta property="og:image" content="https://yourdomain.com/path/to/og-image.jpg">
+    <meta property="og:url" content="https://yourdomain.com/">
     <title>Aria Safaie Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preload" href="styles.css" as="style">
 </head>
 <body class="dark-mode">
     <div class="container">
         <header>
             <h1 class="name">Aria Safaie</h1>
             <div class="contacts">
-                <a href="https://www.linkedin.com/in/ariasafaie/" target="_blank" class="icon">
+                <a href="https://www.linkedin.com/in/ariasafaie/" target="_blank" class="icon" aria-label="LinkedIn profile" rel="noopener noreferrer">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/usernamearia" target="_blank" class="icon">
+                <a href="https://github.com/usernamearia" target="_blank" class="icon" aria-label="GitHub profile" rel="noopener noreferrer">
                     <i class="fab fa-github"></i>
                 </a>
-                <span class="icon mail-icon" onclick="copyEmail()">
+                <span class="icon mail-icon" onclick="copyEmail()" aria-label="Copy email address" role="button" tabindex="0">
                     <i class="fas fa-envelope"></i>
                 </span>
             </div>
-            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHF1d3ZhZXpvYWdmdG44b3ZscXowaWhoM3k0dGxhbGdldGpiMTYwcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/2tThL82tvChwjUARlq/giphy.gif" alt="Animated GIF" class="contacts-gif">
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHF1d3ZhZXpvYWdmdG44b3ZscXowaWhoM3k0dGxhbGdldGpiMTYwcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/2tThL82tvChwjUARlq/giphy.gif" 
+                 alt="Animated illustration of computer programming" 
+                 class="contacts-gif" 
+                 loading="lazy">
         </header>
         <main>
             <section class="summary">
@@ -34,21 +43,21 @@
                 <div class="card">
                     <h3>Information Technology Support Specialist</h3>
                     <p>
-                        <a href="https://www.westphysics.com/" target="_blank" class="company-link">West Physics</a> | March 2025 – Present
+                        <a href="https://www.westphysics.com/" target="_blank" class="company-link" rel="noopener noreferrer">West Physics</a> | March 2025 – Present
                     </p>
                     <p>Incoming</p>
                 </div>
                 <div class="card">
                     <h3>Information Technology Technician</h3>
                     <p>
-                        <a href="https://www.cogenttr.com/" target="_blank" class="company-link">Cogent Technology Resource</a> | Dec 2024 – March 2025
+                        <a href="https://www.cogenttr.com/" target="_blank" class="company-link" rel="noopener noreferrer">Cogent Technology Resource</a> | Dec 2024 – March 2025
                     </p>
                     <p>Helping ensure smooth tech operations by resolving hardware and software issues, configuring devices, and training users on security best practices.</p>
                 </div>
                 <div class="card">
                     <h3>STEM Instructor</h3>
                     <p>
-                        <a href="https://www.whizlearningkids.com/" target="_blank" class="company-link">WhizLearning Kids</a> | Oct 2024 – Dec 2024
+                        <a href="https://www.whizlearningkids.com/" target="_blank" class="company-link" rel="noopener noreferrer">WhizLearning Kids</a> | Oct 2024 – Dec 2024
                     </p>
                     <p>Taught elementary students programming concepts through fun, interactive lessons using Scratch and Python.</p>
                 </div>
@@ -58,13 +67,13 @@
                 <div class="card">
                     <h3>
                         Password Wizard |
-                        <a href="https://passwordwizard.netlify.app/" target="_blank" class="project-link">
+                        <a href="https://passwordwizard.netlify.app/" target="_blank" class="project-link" rel="noopener noreferrer">
                             Visit Live Website
                         </a>
                     </h3>
                     <p>Developed a user-friendly web application to generate strong, secure passwords and check the strength of existing passwords, enhancing online security awareness.</p>
                     <p>
-                        <a href="https://github.com/usernamearia/passwordwizard" target="_blank" class="project-link">
+                        <a href="https://github.com/usernamearia/passwordwizard" target="_blank" class="project-link" rel="noopener noreferrer">
                             View GitHub Repository
                         </a>
                     </p>
@@ -73,20 +82,16 @@
                     <h3>Portfolio Website</h3>
                     <p>Built this very portfolio to showcase my skills! Responsive, dynamic, and deployed with GitHub Pages for cross-platform compatibility.</p>
                     <p>
-                        <a href="https://github.com/usernamearia/usernamearia.github.io" target="_blank" class="project-link">
+                        <a href="https://github.com/usernamearia/usernamearia.github.io" target="_blank" class="project-link" rel="noopener noreferrer">
                             View GitHub Repository
                         </a>
                     </p>
-                </div>
-                <div class="card">
-                    <h3>Cybersecurity Homelab</h3>
-                    <p>Set up a virtual lab with tools like Active Directory, Snort, Splunk, and Kali Linux to simulate real-world network security and penetration testing scenarios.</p>
                 </div>
             </section>
         </main>
         <footer>
             <p>&copy; 2025 Aria Safaie</p>
-            <p>Licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+            <p>Licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License</a></p>
         </footer>
     </div>
     <script src="script.js"></script>
