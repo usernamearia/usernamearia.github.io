@@ -38,11 +38,11 @@ body::before {
     height: 100%;
     background: linear-gradient(
         45deg,
-        rgba(0, 0, 0, 0.8) 0%,
-        rgba(128, 128, 128, 0.5) 40%, 
-        rgba(255, 255, 255, 0.3) 60%, 
-        rgba(128, 128, 128, 0.5) 80%, 
-        rgba(0, 0, 0, 0.8) 100% 
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(18, 18, 18, 0.8) 40%, 
+        rgba(33, 33, 33, 0.7) 60%, 
+        rgba(18, 18, 18, 0.8) 80%, 
+        rgba(0, 0, 0, 0.9) 100% 
     );
     background-size: 200% 200%;
     animation: gradientFlow 30s ease infinite; 
@@ -55,7 +55,6 @@ body::before {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
-
 
 body::after {
     content: '';
@@ -170,7 +169,7 @@ section:hover {
     padding: 1rem;
     margin-top: 0.8rem;
     transition: transform 0.3s ease-in-out, background 0.3s ease;
-    background: rgba(255, 255, 255, 0.1); /* Applied directly */
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
 }
 
