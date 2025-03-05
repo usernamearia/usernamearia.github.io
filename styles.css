@@ -23,7 +23,7 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: 2rem 0;
-    color: #ffffff;
+    color: #FFF3E0;
     font-size: 14px;
     position: relative;
     background: #121212;
@@ -246,4 +246,8 @@ footer p {
     .contacts .icon {
         font-size: 2rem;
     }
+}
+
+.subsection {
+    margin: 1.5rem 0;
 }
