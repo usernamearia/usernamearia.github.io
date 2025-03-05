@@ -139,7 +139,7 @@ footer a {
 .project-link:hover,
 footer a:hover {
     text-decoration: underline;
-    color: #0056b3;
+    opacity: 50%;
 }
 
 main {
