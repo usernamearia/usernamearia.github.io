@@ -195,8 +195,6 @@ footer p {
     margin: 0.5rem 0;
 }
 
-/* Existing CSS remains the same until the media queries */
-
 @media (max-width: 768px) {
     body {
         padding: 1rem 0;
@@ -212,19 +210,6 @@ footer p {
 
     section {
         margin: 1rem 0;
-    }
-
-    .card p {
-        white-space: nowrap; 
-        font-size: 0.9rem; 
-    }
-
-    .card h3 {
-        font-size: 1.1rem; 
-    }
-
-    .company-link, .project-link {
-        font-size: 0.9rem; 
     }
 }
 
@@ -258,17 +243,8 @@ footer p {
     .contacts .icon {
         font-size: 2rem;
     }
+}
 
-    .card p {
-        white-space: nowrap; 
-        font-size: 0.8rem; 
-    }
-
-    .card h3 {
-        font-size: 1rem; 
-    }
-
-    .company-link, .project-link {
-        font-size: 0.8rem; 
-    }
+.subsection {
+    margin: 1.5rem 0;
 }
