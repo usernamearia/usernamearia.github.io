@@ -1,114 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aria Safaie's portfolio showcasing IT support, cybersecurity, and web development projects.">
-    <meta property="og:title" content="Aria Safaie Portfolio">
-    <meta property="og:description" content="IT Support Specialist with a passion for cybersecurity and web development.">
-    <meta property="og:image" content="https://yourdomain.com/path/to/og-image.jpg">
-    <meta property="og:url" content="https://yourdomain.com/">
-    <title>Aria Safaie Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preload" href="styles.css" as="style">
-</head>
-<body class="dark-mode">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aria Safaie's portfolio showcasing IT support, cybersecurity, and web development projects with expertise in secure password management."
+    />
+    <meta
+      name="keywords"
+      content="IT Support, Cybersecurity, Web Development, Password Security, Portfolio, Security+, STEM Education"
+    />
+    <meta
+      property="og:title"
+      content="Aria Safaie - IT & Cybersecurity Professional"
+    />
+    <meta
+      property="og:description"
+      content="IT Support Specialist with a passion for cybersecurity and web development. View my projects and experience."
+    />
+    <meta
+      property="og:image"
+      content="https://yourdomain.com/path/to/og-image.jpg"
+    />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <title>Aria Safaie - IT & Cybersecurity Professional</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preload" href="styles.css" as="style" />
+  </head>
+  <body class="dark-mode">
     <div class="container">
-        <header>
-            <h1 class="name">Aria Safaie</h1>
-            <div class="contacts">
-                <a href="https://www.linkedin.com/in/ariasafaie/" target="_blank" class="icon" aria-label="LinkedIn profile" rel="noopener noreferrer">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/usernamearia" target="_blank" class="icon" aria-label="GitHub profile" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i>
-                </a>
-                <span class="icon mail-icon" onclick="copyEmail()" aria-label="Copy email address" role="button" tabindex="0">
-                    <i class="fas fa-envelope"></i>
-                </span>
+      <header role="banner">
+        <h1 class="name">Aria Safaie</h1>
+        <p class="tagline">IT Support Specialist & Cybersecurity Enthusiast</p>
+        <nav aria-label="Social media links" class="contacts">
+          <a
+            href="https://www.linkedin.com/in/ariasafaie/"
+            target="_blank"
+            class="icon"
+            aria-label="LinkedIn profile"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://github.com/usernamearia"
+            target="_blank"
+            class="icon"
+            aria-label="GitHub profile"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-github" aria-hidden="true"></i>
+          </a>
+          <button
+            class="icon mail-icon"
+            onclick="copyEmail()"
+            aria-label="Copy email address to clipboard"
+          >
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <span class="sr-only">Copy email: ariasafaie@gmail.com</span>
+          </button>
+        </nav>
+        <img
+          src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHF1d3ZhZXpvYWdmdG44b3ZscXowaWhoM3k0dGxhbGdldGpiMTYwcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/2tThL82tvChwjUARlq/giphy.gif"
+          alt="Animated illustration of computer programming showing code and a laptop"
+          class="contacts-gif"
+          loading="lazy"
+          width="120"
+          height="80"
+        />
+        <div class="cta-container">
+          <a href="#" class="cta-button" aria-label="Toggle content visibility">
+            <i class="fas fa-folder-open" aria-hidden="true"></i> Explore My
+            Work
+          </a>
+        </div>
+      </header>
+      <main id="main-content" role="main">
+        <div id="content-sections">
+          <section class="experience" aria-labelledby="experience-heading">
+            <h2 id="experience-heading">💼 Experience</h2>
+            <div class="card" tabindex="0">
+              <h3>Information Technology Support Specialist</h3>
+              <p>
+                <a
+                  href="https://www.westphysics.com/"
+                  target="_blank"
+                  class="company-link"
+                  rel="noopener noreferrer"
+                  >West Physics</a
+                >
+                | March 2025 – Present
+              </p>
+              <p>Incoming</p>
             </div>
-            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHF1d3ZhZXpvYWdmdG44b3ZscXowaWhoM3k0dGxhbGdldGpiMTYwcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/2tThL82tvChwjUARlq/giphy.gif" 
-                 alt="Animated illustration of computer programming" 
-                 class="contacts-gif" 
-                 loading="lazy">
-        </header>
-        <main>
-            <section class="experience">
-                <h2>💼 Experience</h2>
-                <div class="card">
-                    <h3>Information Technology Support Specialist</h3>
-                    <p>
-                        <a href="https://www.westphysics.com/" target="_blank" class="company-link" rel="noopener noreferrer">West Physics</a> | March 2025 – Present
-                    </p>
-                    <p>Incoming</p>
-                </div>
-                <div class="card">
-                    <h3>Information Technology Technician</h3>
-                    <p>
-                        <a href="https://www.cogenttr.com/" target="_blank" class="company-link" rel="noopener noreferrer">Cogent Technology Resource</a> | Dec 2024 – March 2025
-                    </p>
-                    <p>Helping ensure smooth tech operations by resolving hardware and software issues, configuring devices, and training users on security best practices.</p>
-                </div>
-                <div class="card">
-                    <h3>STEM Instructor</h3>
-                    <p>
-                        <a href="https://www.whizlearningkids.com/" target="_blank" class="company-link" rel="noopener noreferrer">WhizLearning Kids</a> | Oct 2024 – Dec 2024
-                    </p>
-                    <p>Taught elementary students programming concepts through fun, interactive lessons using Scratch and Python.</p>
-                </div>
-            </section>
+            <div class="card" tabindex="0">
+              <h3>Information Technology Technician</h3>
+              <p>
+                <a
+                  href="https://www.cogenttr.com/"
+                  target="_blank"
+                  class="company-link"
+                  rel="noopener noreferrer"
+                  >Cogent Technology Resource</a
+                >
+                | Dec 2024 – March 2025
+              </p>
+              <p>
+                Helping ensure smooth tech operations by resolving hardware and
+                software issues, configuring devices, and training users on
+                security best practices.
+              </p>
+            </div>
+            <div class="card" tabindex="0">
+              <h3>STEM Instructor</h3>
+              <p>
+                <a
+                  href="https://www.whizlearningkids.com/"
+                  target="_blank"
+                  class="company-link"
+                  rel="noopener noreferrer"
+                  >WhizLearning Kids</a
+                >
+                | Oct 2024 – Dec 2024
+              </p>
+              <p>
+                Taught elementary students programming concepts through fun,
+                interactive lessons using Scratch and Python.
+              </p>
+            </div>
+          </section>
 
-            <section class="professional-development">
-                <h2>🎯 Professional Development</h2>
-                <div class="subsection">
-                    <h3>🛠️ Projects</h3>
-                    <div class="card">
-                        <h3>
-                            WizardPass |
-                            <a href="https://wizardpass.netlify.app/" target="_blank" class="project-link" rel="noopener noreferrer">
-                                Visit Live Website
-                            </a>
-                        </h3>
-                        <p>Developed a user-friendly web application to generate strong, secure passwords and check the strength of existing passwords, enhancing online security awareness.</p>
-                        <p>
-                            <a href="https://github.com/usernamearia/wizardpass" target="_blank" class="project-link" rel="noopener noreferrer">
-                                View GitHub Repository
-                            </a>
-                        </p>
-                    </div>
-                    <div class="card">
-                        <h3>Portfolio Website</h3>
-                        <p>Built this very portfolio to showcase my skills! Responsive, dynamic, and deployed with GitHub Pages for cross-platform compatibility.</p>
-                        <p>
-                            <a href="https://github.com/usernamearia/usernamearia.github.io" target="_blank" class="project-link" rel="noopener noreferrer">
-                                View GitHub Repository
-                            </a>
-                        </p>
-                    </div>
-                </div>
+          <section
+            id="projects"
+            class="professional-development"
+            aria-labelledby="professional-heading"
+          >
+            <h2 id="professional-heading">🎯 Professional Development</h2>
+            <div class="subsection" aria-labelledby="projects-heading">
+              <h3 id="projects-heading">🛠️ Projects</h3>
+              <div class="card" tabindex="0">
+                <h3>
+                  WizardPass |
+                  <a
+                    href="https://wizardpass.netlify.app/"
+                    target="_blank"
+                    class="project-link"
+                    rel="noopener noreferrer"
+                  >
+                    Visit Live Website
+                  </a>
+                </h3>
+                <p>
+                  Developed a user-friendly web application to generate strong,
+                  secure passwords and check the strength of existing passwords,
+                  enhancing online security awareness.
+                </p>
+                <p>
+                  <a
+                    href="https://github.com/usernamearia/wizardpass"
+                    target="_blank"
+                    class="project-link"
+                    rel="noopener noreferrer"
+                  >
+                    View GitHub Repository
+                  </a>
+                </p>
+              </div>
+              <div class="card" tabindex="0">
+                <h3>Portfolio Website</h3>
+                <p>
+                  Built this very portfolio to showcase my skills! Responsive,
+                  dynamic, and deployed with GitHub Pages for cross-platform
+                  compatibility.
+                </p>
+                <p>
+                  <a
+                    href="https://github.com/usernamearia/usernamearia.github.io"
+                    target="_blank"
+                    class="project-link"
+                    rel="noopener noreferrer"
+                  >
+                    View GitHub Repository
+                  </a>
+                </p>
+              </div>
+            </div>
 
-                <div class="subsection">
-                    <h3>📜 Certifications</h3>
-                    <div class="card">
-                        <h3>CompTIA Security+</h3>
-                    </div>
-                </div>
-            </section>
+            <div class="subsection" aria-labelledby="certifications-heading">
+              <h3 id="certifications-heading">📜 Certifications</h3>
+              <div class="card" tabindex="0">
+                <h3>CompTIA Security+</h3>
+                <p>
+                  Industry-standard certification validating cybersecurity
+                  knowledge and skills
+                </p>
+              </div>
+            </div>
+          </section>
 
-            <section class="education">
-                <h2>🎓 Education</h2>
-                <div class="card">
-                    <h3>Bachelor of Science in Computer Science</h3>
-                    <p>University of Georgia | May 2024</p>
-                </div>
-            </section>
-        </main>
-        <footer>
+          <section class="education" aria-labelledby="education-heading">
+            <h2 id="education-heading">🎓 Education</h2>
+            <div class="card" tabindex="0">
+              <h3>Bachelor of Science in Computer Science</h3>
+              <p>University of Georgia | May 2024</p>
+            </div>
+          </section>
+
+          <footer role="contentinfo">
             <p>&copy; 2025 Aria Safaie</p>
-            <p>Licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License</a></p>
-        </footer>
+            <p>
+              Licensed under the
+              <a
+                href="https://opensource.org/licenses/MIT"
+                target="_blank"
+                rel="noopener noreferrer"
+                >MIT License</a
+              >
+            </p>
+          </footer>
+        </div>
+      </main>
     </div>
-    <script src="script.js"></script>
-</body>
+    <!-- Toast container for notifications -->
+    <div
+      id="toast-container"
+      role="status"
+      aria-live="polite"
+      class="toast-container"
+    ></div>
+    <script src="script.js" defer></script>
+  </body>
 </html>
