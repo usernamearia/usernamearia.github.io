@@ -193,25 +193,49 @@ function toggleTheme() {
     showToast('🌙 Dark mode activated!');
   }
 
-  // Force a repaint to fix iOS rendering issue
-  void body.offsetHeight; // This triggers a reflow
+  // Force a comprehensive repaint to fix iOS rendering issues
+  // Method 1: Force reflow
+  void body.offsetHeight;
+
+  // Method 2: Toggle a temporary class
+  body.classList.add('ios-repaint-fix');
+  setTimeout(() => {
+    body.classList.remove('ios-repaint-fix');
+  }, 10);
+
+  // Method 3: Use CSS transforms to force hardware acceleration
+  const origTransform = body.style.transform;
+  body.style.transform = 'translateZ(0)';
+  setTimeout(() => {
+    body.style.transform = origTransform;
+  }, 10);
 }
 
 // Check for saved theme preference or use default
 function applyTheme() {
   const savedTheme = localStorage.getItem('theme');
   const themeToggleIcon = document.getElementById('theme-toggle-icon');
+  const body = document.body;
 
   if (savedTheme === 'light') {
-    document.body.classList.remove('dark-mode');
-    document.body.classList.add('light-mode');
+    body.classList.remove('dark-mode');
+    body.classList.add('light-mode');
     themeToggleIcon.classList.remove('fa-sun');
     themeToggleIcon.classList.add('fa-moon');
   } else {
     // Ensure dark mode is applied (should already be default)
-    document.body.classList.add('dark-mode');
-    document.body.classList.remove('light-mode');
+    body.classList.add('dark-mode');
+    body.classList.remove('light-mode');
     themeToggleIcon.classList.remove('fa-moon');
     themeToggleIcon.classList.add('fa-sun');
   }
+
+  // Force iOS to repaint on initial theme application
+  // For iOS Safari
+  setTimeout(() => {
+    body.classList.add('ios-repaint-fix');
+    setTimeout(() => {
+      body.classList.remove('ios-repaint-fix');
+    }, 50);
+  }, 100);
 }
