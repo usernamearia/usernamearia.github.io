@@ -170,7 +170,6 @@ document.addEventListener('DOMContentLoaded', function () {
   applyTheme();
 });
 
-// Theme toggle functionality
 function toggleTheme() {
   const body = document.body;
   const themeToggleIcon = document.getElementById('theme-toggle-icon');
@@ -193,6 +192,9 @@ function toggleTheme() {
     localStorage.setItem('theme', 'dark');
     showToast('🌙 Dark mode activated!');
   }
+
+  // Force a repaint to fix iOS rendering issue
+  void body.offsetHeight; // This triggers a reflow
 }
 
 // Check for saved theme preference or use default
