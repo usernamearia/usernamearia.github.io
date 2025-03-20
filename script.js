@@ -163,25 +163,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-
-// Force iOS Safari repaints
-function forceIOSRepaint() {
-  const body = document.body;
-
-  // Force a comprehensive repaint to fix iOS rendering issues
-  // Method 1: Force reflow
-  void body.offsetHeight;
-
-  // Method 2: Toggle a temporary class
-  body.classList.add('ios-repaint-fix');
-  setTimeout(() => {
-    body.classList.remove('ios-repaint-fix');
-  }, 10);
-
-  // Method 3: Use CSS transforms to force hardware acceleration
-  const origTransform = body.style.transform;
-  body.style.transform = 'translateZ(0)';
-  setTimeout(() => {
-    body.style.transform = origTransform;
-  }, 10);
-}
