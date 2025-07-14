@@ -31,6 +31,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="preload" href="styles.css" as="style" />
+
+    <style>
+      .gif-container {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    </style>
   </head>
   <body class="dark-mode">
     <div class="container">
@@ -65,14 +74,18 @@
             <span class="sr-only">Copy email: ariasafaie@gmail.com</span>
           </button>
         </nav>
-        <img
-          src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHF1d3ZhZXpvYWdmdG44b3ZscXowaWhoM3k0dGxhbGdldGpiMTYwcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/2tThL82tvChwjUARlq/giphy.gif"
-          alt="Animated illustration of computer programming showing code and a laptop"
-          class="contacts-gif"
-          loading="lazy"
-          width="120"
-          height="80"
-        />
+
+        <div class="gif-container">
+          <img
+            src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXp6bGcwdXVpMDZud2Q4YnQweDB5bGZicHY2Yzl4MTlqMXRld3FxYiZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9dHM/h1Co5blciXKL5Hd6TA/giphy.gif"
+            alt="Animated Georgia state flag waving"
+            class="contacts-gif"
+            loading="lazy"
+            width="120"
+            height="80"
+          />
+        </div>
+
         <div class="cta-container">
           <a href="#" class="cta-button" aria-label="Toggle content visibility">
             <i class="fas fa-folder-open" aria-hidden="true"></i> Explore My
@@ -153,7 +166,7 @@
                 <h3>Portfolio Website</h3>
                 <p>
                   Built this very portfolio to showcase my skills! Responsive,
-                  dynamic, and deployed with GitHub Pages for cross-platform
+                  dynamic, and deployed with GitHub Pages for cross platform
                   compatibility.
                 </p>
                 <p>
@@ -172,6 +185,9 @@
             <div class="subsection" aria-labelledby="certifications-heading">
               <h3 id="certifications-heading">📜 Certifications</h3>
               <div class="card" tabindex="0">
+                <h3>CompTIA CySA+</h3>
+              </div>
+              <div class="card" tabindex="0">
                 <h3>CompTIA Security+</h3>
               </div>
               <div class="card" tabindex="0">
@@ -185,6 +201,10 @@
 
           <section class="education" aria-labelledby="education-heading">
             <h2 id="education-heading">🎓 Education</h2>
+            <div class="card" tabindex="0">
+              <h3>Master of Science in Cybersecurity (Incoming)</h3>
+              <p>Georgia Institute of Technology | Starting 2026</p>
+            </div>
             <div class="card" tabindex="0">
               <h3>Bachelor of Science in Computer Science</h3>
               <p>University of Georgia | August 2024</p>
